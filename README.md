@@ -1,3 +1,17 @@
+# 环境配置
+
+```shell
+conda create -n gs-view python=3.10
+conda activate gs-view
+export CC=/usr/bin/gcc-9
+export CXX=/usr/bin/g++-9
+export TORCH_CUDA_ARCH_LIST="8.6+PTX"
+pip install torch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 --index-url https://download.pytorch.org/whl/cu118
+pip install -r requirements.txt
+```
+
+------
+
 <div align="center">
 
   <h1><img src="resources/images/icon.png" width="35"> splatviz</h1>
